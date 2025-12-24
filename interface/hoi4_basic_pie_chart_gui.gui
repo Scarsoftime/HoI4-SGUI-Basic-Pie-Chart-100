@@ -1,0 +1,150 @@
+guitypes = {
+	containerwindowtype = {
+		name = "hoi4_basic_pie_chart_window"
+		size = { width = 100%% height = 190 }
+
+		containerwindowtype = {
+			name = "pie_group"
+			position = { x = 15 y = 10 }
+			icontype = {
+				name = "pie_3"
+				spritetype = "GFX_pie_red_static"
+				position = { x = 9 y = 9 }
+			}
+			icontype = {
+				name = "pie_2"
+				quadtexturesprite = "GFX_pie_pink"
+				position = { x = 9 y = 8 }
+			}
+			icontype = {
+				name = "pie_1"
+				quadtexturesprite = "GFX_pie_grey"
+				position = { x = 9 y = 8 }
+			}
+			icontype = {
+				name = "pie_0"
+				quadtexturesprite = "GFX_pie_blue"
+				position = { x = 9 y = 8 }
+			}
+			icontype = {
+				name = "pie_overlay"
+				spritetype = "GFX_pie_overlay"
+				position = { x = 0 y = 0 }
+			}
+		}
+		
+		containerwindowtype = {
+			name = "text_container"
+			position = { x = 205 y = 5 }
+
+			@row_1_y = 35
+			@row_2_y = 70
+			@row_3_y = 105
+			@row_4_y = 140
+			
+			### COLUMN 1 - FACTION NAMES ###
+			@col_1_x = 0
+			
+			# Header
+			InstantTextBoxType = {
+				name = "faction_title"
+				text = "pie_faction_title"
+				font = "hoi_18mbs"
+				format = left
+				maxwidth = 140
+				maxheight = 36
+				pdx_tooltip = CVA_zpt_faction_title_tt
+			}
+			
+			# Content
+			InstantTextBoxType = {
+				name = "pie_faction_0_txt"
+				position = { x = @col_1_x y = @row_1_y }
+				text = "pie_faction_0"
+				font = "hoi_18mbs"
+				format = left
+				maxwidth = 140
+				maxheight = 36
+			}
+			InstantTextBoxType = {
+				name = "pie_faction_1_txt"
+				position = { x = @col_1_x y = @row_2_y }
+				text = "pie_faction_1"
+				font = "hoi_18mbs"
+				format = left
+				maxwidth = 140
+				maxheight = 36
+			}
+			InstantTextBoxType = {
+				name = "pie_faction_2_txt"
+				position = { x = @col_1_x y = @row_3_y }
+				text = "pie_faction_2"
+				font = "hoi_18mbs"
+				format = left
+				maxwidth = 140
+				maxheight = 36
+			}
+			InstantTextBoxType = {
+				name = "pie_faction_3_txt"
+				position = { x = @col_1_x y = @row_4_y }
+				text = "pie_faction_3"
+				font = "hoi_18mbs"
+				format = left
+				maxwidth = 140
+				maxheight = 36
+			}
+			
+			### COLUMN 2 - INFLUENCE AMOUNT ###
+			@col_2_x = 150
+			
+			# Header
+			InstantTextBoxType = {
+				name = "inf_amount_title"
+				position = { x = @col_2_x y = 0 }
+				text = "pie_influence_amount_title"
+				font = "hoi_18mbs"
+				format = center
+				maxwidth = 100
+				maxheight = 36
+			}
+			
+			# Content
+			InstantTextBoxType = {
+				name = "pie_0_inf"
+				position = { x = @col_2_x y = @row_1_y }
+				text = "[?pie_influence^0|%%Y0]"
+				font = "hoi_18mbs"
+				format = center
+				maxwidth = 100
+				maxheight = 36
+			}
+			InstantTextBoxType = {
+				name = "pie_1_inf"
+				position = { x = @col_2_x y = @row_2_y }
+				text = "[?pie_influence^1|%%Y0]"
+				font = "hoi_18mbs"
+				format = center
+				maxwidth = 100
+				maxheight = 36
+			}
+			InstantTextBoxType = {
+				name = "pie_2_inf"
+				position = { x = @col_2_x y = @row_3_y }
+				text = "[?pie_influence^2|%%Y0]"
+				font = "hoi_18mbs"
+				format = center
+				maxwidth = 100
+				maxheight = 36
+			}
+			InstantTextBoxType = {
+				name = "pie_3_inf"
+				position = { x = @col_2_x y = @row_4_y }
+				text = "[?pie_influence^3|%%Y0]"
+				font = "hoi_18mbs"
+				format = center
+				maxwidth = 100
+				maxheight = 36
+			}
+		}
+	}
+}

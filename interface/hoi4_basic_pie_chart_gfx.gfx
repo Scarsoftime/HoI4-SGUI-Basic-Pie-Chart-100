@@ -1,0 +1,33 @@
+spriteTypes = {
+	# The progress_radial.shader file should already be there from vanilla.
+	progressbartype = {
+		name = "GFX_pie_blue"
+		texturefile1 = "gfx/interface/hoi4_basic_pie_chart/pie_blue.dds"
+		texturefile2 = "gfx/interface/hoi4_basic_pie_chart/empty_pie.dds"
+		size = { x = 140 y = 140 }
+		effectfile = "gfx/FX/progress_radial.shader"
+	}
+	progressbartype = {
+		name = "GFX_pie_grey"
+		texturefile1 = "gfx/interface/hoi4_basic_pie_chart/pie_grey.dds"
+		texturefile2 = "gfx/interface/hoi4_basic_pie_chart/empty_pie.dds"
+		size = { x = 140 y = 140 }
+		effectfile = "gfx/FX/progress_radial.shader"
+	}
+	progressbartype = {
+		name = "GFX_pie_pink"
+		texturefile1 = "gfx/interface/hoi4_basic_pie_chart/pie_pink.dds"
+		texturefile2 = "gfx/interface/hoi4_basic_pie_chart/empty_pie.dds"
+		size = { x = 140 y = 140 }
+		effectfile = "gfx/FX/progress_radial.shader"
+	}
+	spritetype = {
+		name = "GFX_pie_red_static"
+		texturefile = "gfx/interface/hoi4_basic_pie_chart/pie_red.dds"
+	}
+	spritetype = {
+		name = "GFX_pie_overlay"
+		texturefile = "gfx/interface/hoi4_basic_pie_chart/overlay.dds"
+		transparencecheck = yes
+	}
+}

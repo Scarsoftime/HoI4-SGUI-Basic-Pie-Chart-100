@@ -1,0 +1,76 @@
+pie_initialize = {
+    clear_array = pie_influence
+    add_to_array = { pie_influence = 30 } # pie_influence^0
+    add_to_array = { pie_influence = 15 } # pie_influence^1
+    add_to_array = { pie_influence = 40 } # pie_influence^2
+    add_to_array = { pie_influence = 15 } # pie_influence^3
+    pie_update_frames = yes
+}
+
+pie_update_frames = {
+    # pie_influence_0_frame = pie_influence^0
+    set_variable = { pie_influence_0_frame = pie_influence^0 }
+    
+    # pie_influence_1_frame = pie_influence^0 + pie_influence^1
+    set_variable = { pie_influence_1_frame = pie_influence_0_frame }
+    add_to_variable = { pie_influence_1_frame = pie_influence^1 }
+    
+    # pie_influence_2_frame = pie_influence^0 + pie_influence^1 + pie_influence^2
+    set_variable = { pie_influence_2_frame = pie_influence_1_frame }
+    add_to_variable = { pie_influence_2_frame = pie_influence^2 }
+
+    # pie influence 3 is static, does not need frames
+
+    # dirty variable to update the gui
+    add_to_variable = { pie_dirty = 0.00001 }
+}
+
+#### Indexes
+# 0 = Blue
+# 1 = Grey
+# 2 = Pink
+# 3 = Red
+
+## How to use:
+# set_temp_variable = { temp_party = 1 }
+# set_temp_variable = { temp_amount = 10 }
+# pie_add_influence = yes
+
+## This will change Grey's (1) influence by 10, deducting it from other factions.
+pie_add_influence = {
+    set_temp_variable = { old_size = 100 }
+    subtract_from_temp_variable = { old_size = pie_influence^temp_party }
+    add_to_variable = { pie_influence^temp_party = temp_amount }
+    clamp_variable = {
+        var = pie_influence^temp_party
+        max = 100
+        min = 0
+    }
+    set_temp_variable = { new_size = 100 }
+    subtract_from_temp_variable = { new_size = pie_influence^temp_party }
+    divide_temp_variable = { new_size = old_size }
+    
+    for_each_loop = {
+        array = pie_influence
+        index = i
+        
+        if = {
+            limit = {
+                check_variable = { 
+                    var = i
+                    value = temp_party
+                    compare = not_equals
+                }
+            }
+            multiply_variable = { pie_influence^i = new_size }
+        }
+    }
+
+    pie_update_frames = yes
+}
+
+d_pie_add_influence = {
+    set_temp_variable = { temp_party = args^0 }
+    set_temp_variable = { temp_amount = args^1 }
+    pie_add_influence = yes
+}

@@ -1,0 +1,14 @@
+scripted_gui = {
+	hoi4_basic_pie_chart_gui = {
+		window_name = "hoi4_basic_pie_chart_window"
+		context_type = decision_category
+		dirty = pie_dirty
+
+		properties = {
+			pie_0 = { frame = pie_influence_0_frame }
+			pie_1 = { frame = pie_influence_1_frame }
+			pie_2 = { frame = pie_influence_2_frame }
+			# pie_3 is static
+		}
+	}
+}

@@ -1,0 +1,23 @@
+﻿l_english:
+ hoi4_basic_pie_chart_deccat: "The Color Wars"
+
+ pie_faction_title: "Factions"
+ pie_faction_0: "The Blue"
+ pie_faction_1: "The Grey"
+ pie_faction_2: "The Pink"
+ pie_faction_3: "The Red"
+
+ pie_influence_amount_title: "Influence"
+
+ pie_add_5_to_0: "§GAdd§! 5 Influence to §CBlue§!"
+ pie_add_10_to_0: "§GAdd§! 10 Influence to §CBlue§!"
+ pie_subtract_5_from_0: "§RSubtract§! 5 Influence from §CBlue§!"
+ pie_add_5_to_1: "§GAdd§! 5 Influence to §gGrey§!"
+ pie_add_10_to_1: "§GAdd§! 10 Influence to §gGrey§!"
+ pie_subtract_5_from_1: "§RSubtract§! 5 Influence from §gGrey"
+ pie_add_5_to_2: "§GAdd§! 5 Influence to §0Pink§!"
+ pie_add_10_to_2: "§GAdd§! 10 Influence to §0Pink§!"
+ pie_subtract_5_from_2: "§RSubtract§! 5 Influence from §0Pink§!"
+ pie_add_5_to_3: "§GAdd§! 5 Influence to §RRed§!"
+ pie_add_10_to_3: "§GAdd§! 10 Influence to §RRed§!"
+ pie_subtract_5_from_3: "§RSubtract§! 5 Influence from §RRed§!"

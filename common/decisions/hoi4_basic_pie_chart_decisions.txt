@@ -1,0 +1,89 @@
+hoi4_basic_pie_chart_deccat = {
+    pie_add_5_to_0 = {
+        complete_effect = {
+            set_temp_variable = { temp_party = 0 }
+            set_temp_variable = { temp_amount = 5 }
+            pie_add_influence = yes
+        }
+    }
+    pie_add_10_to_0 = {
+        complete_effect = {
+            set_temp_variable = { temp_party = 0 }
+            set_temp_variable = { temp_amount = 10 }
+            pie_add_influence = yes
+        }
+    }
+    pie_subtract_5_from_0 = {
+        complete_effect = {
+            set_temp_variable = { temp_party = 0 }
+            set_temp_variable = { temp_amount = -5 }
+            pie_add_influence = yes
+        }
+    }
+
+    pie_add_5_to_1 = {
+        complete_effect = {
+            set_temp_variable = { temp_party = 1 }
+            set_temp_variable = { temp_amount = 5 }
+            pie_add_influence = yes
+        }
+    }
+    pie_add_10_to_1 = {
+        complete_effect = {
+            set_temp_variable = { temp_party = 1 }
+            set_temp_variable = { temp_amount = 10 }
+            pie_add_influence = yes
+        }
+    }
+    pie_subtract_5_from_1 = {
+        complete_effect = {
+            set_temp_variable = { temp_party = 1 }
+            set_temp_variable = { temp_amount = -5 }
+            pie_add_influence = yes
+        }
+    }
+
+    pie_add_5_to_2 = {
+        complete_effect = {
+            set_temp_variable = { temp_party = 2 }
+            set_temp_variable = { temp_amount = 5 }
+            pie_add_influence = yes
+        }
+    }
+    pie_add_10_to_2 = {
+        complete_effect = {
+            set_temp_variable = { temp_party = 2 }
+            set_temp_variable = { temp_amount = 10 }
+            pie_add_influence = yes
+        }
+    }
+    pie_subtract_5_from_2 = {
+        complete_effect = {
+            set_temp_variable = { temp_party = 2 }
+            set_temp_variable = { temp_amount = -5 }
+            pie_add_influence = yes
+        }
+    }
+
+    pie_add_5_to_3 = {
+        complete_effect = {
+            set_temp_variable = { temp_party = 3 }
+            set_temp_variable = { temp_amount = 5 }
+            pie_add_influence = yes
+        }
+    }
+    pie_add_10_to_3 = {
+        complete_effect = {
+            set_temp_variable = { temp_party = 3 }
+            set_temp_variable = { temp_amount = 10 }
+            pie_add_influence = yes
+        }
+    }
+    pie_subtract_5_from_3 = {
+        complete_effect = {
+            set_temp_variable = { temp_party = 3 }
+            set_temp_variable = { temp_amount = -5 }
+            pie_add_influence = yes
+        }
+    }
+}

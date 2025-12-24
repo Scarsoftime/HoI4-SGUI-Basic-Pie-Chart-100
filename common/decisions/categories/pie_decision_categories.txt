@@ -1,0 +1,7 @@
+hoi4_basic_pie_chart_deccat = {
+	priority = {
+		base = 9999
+	}
+	scripted_gui = hoi4_basic_pie_chart_gui
+	visible_when_empty = yes
+}
