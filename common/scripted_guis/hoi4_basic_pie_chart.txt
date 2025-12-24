@@ -1,3 +1,5 @@
+# By Scars
+
 scripted_gui = {
 	hoi4_basic_pie_chart_gui = {
 		window_name = "hoi4_basic_pie_chart_window"

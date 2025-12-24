@@ -1,3 +1,5 @@
+# By Scars
+
 pie_initialize = {
     clear_array = pie_influence
     add_to_array = { pie_influence = 30 } # pie_influence^0
@@ -37,6 +39,8 @@ pie_update_frames = {
 # pie_add_influence = yes
 
 ## This will change Grey's (1) influence by 10, deducting it from other factions.
+
+# Code by Blue
 pie_add_influence = {
     set_temp_variable = { old_size = 100 }
     subtract_from_temp_variable = { old_size = pie_influence^temp_party }

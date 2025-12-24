@@ -1,3 +1,5 @@
+# By Scars
+
 spriteTypes = {
 	# The progress_radial.shader file should already be there from vanilla.
 	progressbartype = {
