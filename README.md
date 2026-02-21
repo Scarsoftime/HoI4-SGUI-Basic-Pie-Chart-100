@@ -1,5 +1,5 @@
 # HoI4-SGUI-Basic-Pie-Chart-100
-A basic and modern implementation of a pie chart using shaders, array logic, and scripted effects for ease of use.
+A simple and modern take on the implementation of pie charts in HOI4 modding, utilizing shaders and arrays for efficient and understandable use in mods
 
 Comes with a **scripted GUI** of a pie chart as well as **scripted effects** containing code that maintains multiple variables contained in an array to sum up to 100 for something such as an influence power struggle.
 
